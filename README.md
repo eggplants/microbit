@@ -20,8 +20,24 @@ $ sudo chmod a+rw /dev/ttyACM0
 
 ```bash
 $ python -m pip install ufs yotta pipenv
-$ ufs ls
 $ pipenv --python 3.8
 $ pipenv install mu-editor
 $ LANG=C pipenv run mu-editor
+```
+
+## ufs
+
+- microfs
+
+```bash
+# micro:bitを接続した状態で
+
+# 現在のmicrofs内ファイル確認
+$ ufs ls
+# 削除
+$ ufs rm sth.py
+# ローカルファイルをアップロード
+$ ufs put path/sth.py
+# デバイス内ファイルをダウンロード
+$ ufs get sth.py
 ```
