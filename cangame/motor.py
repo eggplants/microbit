@@ -1,11 +1,10 @@
 from microbit import *
 
 class Motor(object):
-    def __init__(self, pinvref: MicroBitTouchPin,
-                 pin1: MicroBitTouchPin, pin2: MicroBitTouchPin):
+    def __init__(self, pinvref_, pin1_, pin2_):
         self.pinvref = pinvref
-        self.pin1 = pin1
-        self.pin2 = pin2
+        self.pin1 = pin1_
+        self.pin2 = pin2_
     def start_forward(self, speed=127, delay=1000):
         self.pinvref.write_analog(speed)
         self.pin1.write_digital(1)
