@@ -6,8 +6,19 @@
 
 ```bash
 # On ubuntu
-sudo usermod -a -G dialout eggplants
-sudo chmod a+rw /dev/ttyACM0
+$ sudo usermod -a -G dialout eggplants
+$ sudo chmod a+rw /dev/ttyACM0
 ```
 
+## 便利なリンク
 
+- BBC micro:bit MicroPython ドキュメンテーション
+  - <https://microbit-micropython.readthedocs.io/ja/latest/index.html>
+  - 本質情報
+
+## 便利なコマンド
+
+```bash
+$ python -m pip install ufs yotta
+$ ufs ls
+```
