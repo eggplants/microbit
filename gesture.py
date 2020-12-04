@@ -1,4 +1,4 @@
-from microbit import
+from microbit import *
 
 while True:
     gesture = accelerometer.current_gesture()
