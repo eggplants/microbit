@@ -41,7 +41,7 @@ class Motor(object):
     def __init__(self, pinvref, pin1, pin2):
         self.pinvref = pinvref
         self.pin1 = pin1
-        self.pin2 = pin2じ
+        self.pin2 = pin2
 
     def start_forward(self, speed=127, delay=1000):
         self.pinvref.write_analog(speed)
