@@ -41,7 +41,7 @@ class Motor(object):
     def __init__(self, pinvref, pin1, pin2):
         self.pinvref = pinvref
         self.pin1 = pin1
-        self.pin2 = pin2
+        self.pin2 = pin2じ
 
     def start_forward(self, speed=127, delay=1000):
         self.pinvref.write_analog(speed)
@@ -66,6 +66,12 @@ class Motor(object):
         sleep(delay)
 
 # Start with the can set
+"""
+TODO:
+    - 人数を入力して時間を設定
+    - ゲームの開始をボタンで制御
+    - モータの制御
+"""
 is_end = False
 while True:
 
