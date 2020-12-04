@@ -31,9 +31,9 @@ def wait_presskey():
         if button_a.is_pressed() or button_b.is_pressed():
             break
 def show_yes():
-    return display.show(Image.YES)
+    display.show(Image.YES)
 def show_no():
-    return display.show(Image.NO)
+    display.show(Image.NO)
 
 # Start with the can set on micro:bit
 
