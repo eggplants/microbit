@@ -19,6 +19,9 @@ $ sudo chmod a+rw /dev/ttyACM0
 ## 便利なコマンド
 
 ```bash
-$ python -m pip install ufs yotta
+$ python -m pip install ufs yotta pipenv
 $ ufs ls
+$ pipenv --python 3.8
+$ pipenv install mu-editor
+$ LANG=C pipenv run mu-editor
 ```
