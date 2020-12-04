@@ -1,5 +1,6 @@
-from microbit import *
 import random
+
+from microbit import *
 
 answers = [
     "It is certain",

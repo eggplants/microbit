@@ -1,12 +1,15 @@
-from microbit import *
 import music
+from microbit import *
 
-play_lis = [eval("['{}',music.{}]".format(song, song)) for song in dir(music) if song.isupper()]
+play_lis = [eval("['{}',music.{}]".format(song, song))
+            for song in dir(music) if song.isupper()]
+
 
 def player(play_lis):
     lis_len, now_ind, end_play = len(play_lis), 0, False
     while True:
-        if end_play: break
+        if end_play:
+            break
         name, source = play_lis[now_ind]
         display.scroll(name, wait=False, loop=True)
         music_len = len(source) - 1
@@ -23,6 +26,7 @@ def player(play_lis):
                 break
             if ind == music_len:
                 now_ind = (now_ind + 1) % lis_len
+
 
 display.scroll("PRESS A+B TO PLAY", wait=False, loop=True)
 while True:
