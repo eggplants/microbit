@@ -8,6 +8,9 @@
 # On ubuntu
 $ sudo usermod -a -G dialout eggplants
 $ sudo chmod a+rw /dev/ttyACM0
+# OR,
+$ chmod +x allow_dev.sh
+$ ./allow_dev.sh
 ```
 
 ## 便利なリンク
