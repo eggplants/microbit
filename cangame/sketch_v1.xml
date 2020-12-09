@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<netlist date="水 12月 9 18:19:42 2020" sketch="sketch_v1.fzz">
+ <net>
+  <connector id="connector18" name="3V3">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector19" name="3V3">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector17" name="3V3">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector7" name="Vcc">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector23" name="GND">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector0" name="pin1">
+   <part id="854131120" title="Loudspeaker" label="SPKR1"/>
+  </connector>
+  <connector id="connector0" name="-">
+   <part id="854128160" title="Battery" label="VCC1"/>
+   <erc etype="ground">
+    <current flow="sink" valueMax="0.1"/>
+   </erc>
+  </connector>
+  <connector id="connector25" name="Bat -">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector24" name="GND">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector22" name="GND">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector1" name="GND">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector12" name="P2">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector6" name="IN2">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector6" name="P1">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector5" name="IN1">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector1" name="P0">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+  <connector id="connector1" name="pin2">
+   <part id="854131120" title="Loudspeaker" label="SPKR1"/>
+  </connector>
+  <connector id="connector4" name="Vref">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector1" name="1">
+   <part id="854130530" title="Ceramic Capacitor" label="C1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector0" name="0">
+   <part id="854130530" title="Ceramic Capacitor" label="C1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector1" name="pin 2">
+   <part id="854129840" title="DC Motor" label="M1"/>
+  </connector>
+  <connector id="connector2" name="OUT1">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector0" name="pin 1">
+   <part id="854129840" title="DC Motor" label="M1"/>
+  </connector>
+  <connector id="connector10" name="OUT2">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector1" name="+">
+   <part id="854128160" title="Battery" label="VCC1"/>
+   <erc etype="VCC">
+    <current flow="source" valueMax="0.1"/>
+    <voltage value="3"/>
+   </erc>
+  </connector>
+  <connector id="connector8" name="Vs">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector16" name="P16">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector26" name="Bat +">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector0" name="P3">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector7" name="P8">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector15" name="P15">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector14" name="P14">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector10" name="P11">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector9" name="P10">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector21" name="P20">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector13" name="P13">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector8" name="P9">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector20" name="P19">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector2" name="P4">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector4" name="P6">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector11" name="P12">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector5" name="P7">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector3" name="P5">
+   <part id="854126740" title="Microbit" label="Mod1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector9" name="9">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+ <net>
+  <connector id="connector3" name="NC">
+   <part id="854126630" title="TA7291P" label="U1"/>
+  </connector>
+ </net>
+</netlist>
