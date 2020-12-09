@@ -4,8 +4,8 @@ import music
 
 m=Motor(pin0, pin1, pin2)
 
-def count_10times():
-    for _ in range(5):
+def count_ntimes(n):
+    for _ in range(n):
            display.show(_)
            sleep(1000)
 
@@ -16,13 +16,13 @@ display.scroll("waiting...", wait=False)
 while True:
    if button_a.is_pressed():
        m.start_forward(speed=500)
-       count_10times()
+       count_ntimes(5)
        m.stop()
        play_beep()
        display.clear()
    if button_b.is_pressed():
        m.start_backward(speed=500)
-       count_10times()
+       count_ntimes(5)
        m.stop()
        play_beep()
        display.clear()
