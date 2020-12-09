@@ -17,7 +17,8 @@ $ ./allow_dev.sh
 
 - BBC micro:bit MicroPython documentation
   - <https://microbit-micropython.readthedocs.io>
-- ...
+- Python Editor for micro:bit
+  - <https://python.microbit.org/v/2.0>
 
 ## Useful commands
 
@@ -50,4 +51,13 @@ $ pip install pipenv
 $ pipenv --python 3.9
 $ pipenv install mu-editor
 $ LANG=C pipenv run mu-editor
+```
+
+### picocom
+
+- Connect to REPL through serial communication
+
+```bash
+$ sudo apt install picocom
+$ picocom /dev/ttyACM0 -b 115200
 ```

@@ -1,25 +1,21 @@
 from microbit import *
 
 class Motor(object):
-    def __init__(self, pinvref_, pin1_, pin2_):
-        self.pinvref = pinvref_
-        self.pin1 = pin1_
-        self.pin2 = pin2_
-    def start_forward(self, speed=127, delay=1000):
-        self.pinvref.write_analog(speed)
-        self.pin1.write_digital(1)
-        self.pin2.write_digital(0)
-        sleep(delay)
-    def start_backward(self, speed=127, delay=1000):
-        self.pinvref.write_analog(speed)
-        self.pin1.write_digital(0)
-        self.pin2.write_digital(1)
-        sleep(delay)
-    def stop(self, delay=1000):
-        self.pin1.write_digital(1)
-        self.pin2.write_digital(1)
-        sleep(delay)
+    def __init__(self, vref_, in1_, in2_):
+        self.vref = vref_
+        self.in1 = in1_
+        self.in2 = in2_
+    def start_forward(self, speed=500):
+        self.vref.write_analog(speed)
+        self.in1.write_digital(1)
+        self.in2.write_digital(0)
+    def start_backward(self, speed=500):
+        self.vref.write_analog(speed)
+        self.in1.write_digital(0)
+        self.in2.write_digital(1)
+    def stop(self):
+        self.in1.write_digital(1)
+        self.in2.write_digital(1)
     def brake(self, delay=1000):
-        self.pin1.write_digital(1)
-        self.pin2.write_digital(1)
-        sleep(delay)
+        self.in1.write_digital(1)
+        self.in2.write_digital(1)
