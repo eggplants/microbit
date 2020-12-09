@@ -1,8 +1,8 @@
-# これは何
+# What is this
 
-- micro:bitを[`bbcmicrobit/micropython`](https://github.com/bbcmicrobit/micropython)で触る
+- handle micro:bit with [`bbcmicrobit/micropython`](https://github.com/bbcmicrobit/micropython)
 
-## ハジメに
+## First
 
 ```bash
 # On ubuntu
@@ -13,34 +13,41 @@ $ chmod +x allow_dev.sh
 $ ./allow_dev.sh
 ```
 
-## 便利なリンク
+## Useful links
 
-- BBC micro:bit MicroPython ドキュメンテーション
-  - <https://microbit-micropython.readthedocs.io/ja/latest/index.html>
-  - 本質情報
+- BBC micro:bit MicroPython documentation
+  - <https://microbit-micropython.readthedocs.io>
+- ...
 
-## 便利なコマンド
+## Useful commands
+
+### ufs
+
+- A command for handling microfs
 
 ```bash
-$ python -m pip install ufs yotta pipenv
-$ pipenv --python 3.8
-$ pipenv install mu-editor
-$ LANG=C pipenv run mu-editor
+# Install
+$ pip install ufs
+
+# With micro:bit connected to pc:
+
+# Check files in micro:bit's microfs
+$ ufs ls
+# Remove a file in microfs
+$ ufs rm sth.py
+# Write local file into microfs
+$ ufs put path/sth.py
+# Download file from microfs
+$ ufs get sth.py
 ```
 
-## ufs
+### mu-editor
 
-- microfs
+- GUI code editor for micropython
 
 ```bash
-# micro:bitを接続した状態で
-
-# 現在のmicrofs内ファイル確認
-$ ufs ls
-# 削除
-$ ufs rm sth.py
-# ローカルファイルをアップロード
-$ ufs put path/sth.py
-# デバイス内ファイルをダウンロード
-$ ufs get sth.py
+$ pip install pipenv
+$ pipenv --python 3.9
+$ pipenv install mu-editor
+$ LANG=C pipenv run mu-editor
 ```
