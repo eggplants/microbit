@@ -61,3 +61,12 @@ $ LANG=C pipenv run mu-editor
 $ sudo apt install picocom
 $ picocom /dev/ttyACM0 -b 115200
 ```
+
+### frizzing
+
+- Designing Circuits IDE
+
+```bash
+$ sudo apt install fritzing
+$ fritzing
+```
