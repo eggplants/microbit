@@ -2,7 +2,7 @@ from motor import Motor
 from microbit import *
 import music
 
-m=Motor(pin0, pin1, pin2)
+m=Motor(pin0, pin12, pin13)
 
 def count_ntimes(n):
     for _ in range(n):
