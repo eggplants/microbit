@@ -40,9 +40,9 @@ def show_no():
 """
 TODO:
     - 人数を入力して時間を設定
-    - モータの制御
 """
 def main() -> None:
+    m = Motor(pin0, pin12, pin13)
     is_end = False
     while True:
         # normal
@@ -58,11 +58,15 @@ def main() -> None:
         if is_end:
             music.stop()
             break
+
         # star
         show_yes()
         play_startime_music()
+        # start to move a motor
+        m.start_forward(speed=500)
         for _ in range(rand_startime()):
             if not is_dark():
+                m.stop()
                 play_win_music()
                 say_chaser_lose()
                 is_end = True
@@ -70,6 +74,7 @@ def main() -> None:
             sleep_second(1)
         if is_end:
             music.stop()
+            m.stop()
             break
     display.clear()
 if __name__ == "__main__":
