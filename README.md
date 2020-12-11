@@ -50,6 +50,7 @@ $ ufs get sth.py
 $ pip install pipenv
 $ pipenv --python 3.9
 $ pipenv install mu-editor
+# not japanese but english
 $ LANG=C pipenv run mu-editor
 ```
 
@@ -62,7 +63,7 @@ $ sudo apt install picocom
 $ picocom /dev/ttyACM0 -b 115200
 ```
 
-### frizzing
+### fritzing
 
 - Designing Circuits IDE
 
