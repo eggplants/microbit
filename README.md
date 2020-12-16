@@ -48,7 +48,7 @@ $ ufs get sth.py
 
 ```bash
 $ pip install pipenv
-$ pipenv --python 3.9
+$ pipenv --python 3.7
 $ pipenv install mu-editor
 # not japanese but english
 $ LANG=C pipenv run mu-editor
